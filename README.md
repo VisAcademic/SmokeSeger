@@ -68,6 +68,18 @@ yml_path = os.path.join('local_data', 'yml', 'smoke_seger.yml')
 
 
 
+# Discussions
+
++ To be added.
+
+
+
+# Acknowledgement
+
+Thanks to [PaddleSeg](https://github.com/PaddlePaddle/PaddleSeg), [SegFormer](https://github.com/NVlabs/SegFormer) and [HarDNet](https://github.com/PingoLH/Pytorch-HarDNet) for the help.
+
+
+
 # Citation
 
 ```
