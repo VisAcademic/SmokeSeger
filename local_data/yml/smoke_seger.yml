@@ -1,6 +1,6 @@
-batch_size: 2
-iters: 10
-num_workers: 1
+batch_size: 16
+iters: 80000
+num_workers: 2
 
 train_dataset:
   type: ImgH5Dataset
@@ -54,7 +54,7 @@ lr_scheduler:
     learning_rate: 0.02
     end_lr: 1.0e-5
     power: 1.0
-  warmup_steps: 30
+  warmup_steps: 50
   start_lr: 0.0
   end_lr: 0.001
 

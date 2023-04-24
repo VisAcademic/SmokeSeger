@@ -173,14 +173,15 @@ def main(args):
 if __name__ == '__main__':
     args = parse_args()
 
-    yml_path = os.path.join('ymls', 'deeplabv3p.yml')
+    yml_path = os.path.join('local_data', 'ymls', 'smoke_seger.yml')
+    model_path = 'trained model path'
+    image_dir = 'image dir'
+    save_dir = 'output image dir'
+
     args.cfg = yml_path
-    args.model_path = os.path.join('output', 'result',
-                                   #'smoke_seger', 'mixer', 'seger_mixer_c256_hp_s9m_T2.pdparams'
-                                   'deeplabv3p', 'deeplabv3p_s9_np.pdparams'
-                                )
+    args.model_path = model_path
     args.crop_size = [512, 512]
-    args.image_path = 'D:\\Dataset\\smoke_datafolder\\predict\\valid'
-    args.save_dir = os.path.join('output', 'predict')
+    args.image_path = image_dir
+    args.save_dir = save_dir
 
     main(args)
