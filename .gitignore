@@ -112,4 +112,5 @@ package-lock.json
 
 local_data/*
 !local_data/yml/
+!local_data/pics/
 .log
